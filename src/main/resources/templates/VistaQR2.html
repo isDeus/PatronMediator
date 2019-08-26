@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola QR</title>
+</head>
+<body>
+
+<img  th:src="@{'data:image/jpeg;base64,'+${aplicacionMediator.getCodigoQR()}}" />
+
+<form action="post">
+    <button type="submit">Volver a App Movil</button>
+</form>
+
+</body>
+</html>

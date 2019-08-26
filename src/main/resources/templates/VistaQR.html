@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http:www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hola QR</title>
+</head>
+<body>
+
+<img  th:src="@{'data:image/jpeg;base64,'+${generadorQR.generarBase64Image()}}" />
+
+</body>
+</html>
